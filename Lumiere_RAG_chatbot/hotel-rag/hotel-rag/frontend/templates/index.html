@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumierè</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <div class="website-bg" id="websiteBg"></div>
+  <div class="grain-overlay"></div>
+
+  <div class="app-shell" id="appShell">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="logo-mark">L</div>
+        <div class="brand">
+          <span class="brand-name">Lumière</span>
+          <span class="brand-tagline">Restaurant Concierge</span>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <nav class="quick-links">
+        <p class="nav-label">Quick Inquiries</p>
+        <button class="quick-btn" data-q="What are the check-in and check-out times?">Check-in & Out</button>
+        <button class="quick-btn" data-q="What is the late check-out policy?">Late Check-out Policy</button>
+        <button class="quick-btn" data-q="What dining and in-room delivery options are available?">Dining & Delivery</button>
+        <button class="quick-btn" data-q="What are the loyalty membership tiers and benefits?">Loyalty Program</button>
+        <button class="quick-btn" data-q="What are the fire and emergency procedures?">Safety & Emergency</button>
+        <button class="quick-btn" data-q="What sustainability initiatives has the hotel implemented?">Sustainability</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="reset-btn" id="resetBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.68"></path></svg>
+          New Conversation
+        </button>
+      </div>
+    </aside>
+
+    <main class="chat-main">
+      <header class="chat-header">
+        <div class="header-status">
+          <span class="status-dot"></span>
+          <span>Available</span>
+        </div>
+        <div class="header-center">
+          <h1 class="header-title">Good day, welcomè</h1>
+        </div>
+        <div class="header-right">
+          <button class="widget-toggle-btn" id="widgetToggleBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span id="widgetToggleLabel">Preview as Widget</span>
+          </button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="messages-area" id="messagesArea">
+        <div class="welcome-block">
+          <div class="welcome-icon">✦</div>
+          <h2 class="welcome-title">Hi! I am Lumière.</h2>
+          <p class="welcome-sub">I'm your personal concierge. Ask me anything about our dining, events, loyalty program, or policies — I'm here to help.</p>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <div class="input-wrapper">
+          <textarea
+            id="messageInput"
+            class="message-input"
+            placeholder="How may I assist you today?"
+            rows="1"
+            maxlength="800"
+          ></textarea>
+          <button class="send-btn" id="sendBtn" aria-label="Send">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </div>
+        <p class="input-hint">Press <kbd>Enter</kbd> to send &nbsp;·&nbsp; <kbd>Shift+Enter</kbd> for new line</p>
+      </div>
+    </main>
+
+  </div>
+
+  <button class="chat-bubble" id="chatBubble" aria-label="Open concierge">✦</button>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

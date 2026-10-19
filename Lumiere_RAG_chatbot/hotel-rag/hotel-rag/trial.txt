@@ -1,0 +1,6 @@
+python -c "
+import requests
+response = requests.get('https://www.theleela.com', headers={'User-Agent': 'Mozilla/5.0'})
+print('Status Code:', response.status_code)
+print('Response:', response.text[:200])
+"
