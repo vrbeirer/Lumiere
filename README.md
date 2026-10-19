@@ -32,11 +32,11 @@ Built to explore how retrieval, embeddings, vector search, and LLMs can work tog
 │  LUMIERE / TECH STACK                      │
 ├────────────────────────────────────────────┤
 │                                            │
-│  01   PYTHON       Core language            │
+│  01   PYTHON       Core language           │
 │  02   RAG          Retrieval architecture  │
-│  03   MINILM       Text embeddings          │
-│  04   FAISS        Vector search            │
-│  05   LLAMA 3      Language model           │
+│  03   MINILM       Text embeddings         │
+│  04   FAISS        Vector search           │
+│  05   LLAMA 3      Language model          │
 │                                            │
 └────────────────────────────────────────────┘
 ```
