@@ -16,13 +16,7 @@ Built to explore how retrieval, embeddings, vector search, and LLMs can work tog
 
 ### 👀 Want the technical details?
 
-The project includes a separate technical README covering the implementation and setup.
-
-👉 **[Check out the Technical README](TECHNICAL_README.md)**
-
-### 🔐 Repository note
-
-I've intentionally shared this version as a ZIP archive rather than exposing the project file by file. This is a sharing preference, not a security measure. Please note that API keys must be kept private and excluded from shared archives.
+The project includes a separate technical README covering the implementation and setup inside.
 
 ### ⏳ A quick heads-up
 
